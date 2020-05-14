@@ -19,11 +19,12 @@
         <a-entity id="mouseCursor"
           cursor="fuse: true; fuseTimeout: 1500">
         </a-entity>
-        <a-triangle id="cursorRing" 
+        <a-box id="cursorRing" 
           position="0 0 -1"
-          vertex-c= "1 -1 0"
+          height="0.1"
+          width="0.1"
           material="color: red; shader: flat">
-        </a-triangle>
+        </a-box>
       </a-camera>
       
       <a-box id="myBox" 
