@@ -19,12 +19,11 @@
         <a-entity id="mouseCursor"
           cursor="fuse: true; fuseTimeout: 1500">
         </a-entity>
-        <a-ring id="cursorRing" 
+        <a-triangle id="cursorRing" 
           position="0 0 -1"
-          radius-inner= "0.02"
-          radius-outer= "0.03"
+          vertex-c= "1 -1 0"
           material="color: red; shader: flat">
-        </a-ring>
+        </a-triangle>
       </a-camera>
       
       <a-box id="myBox" 
@@ -44,7 +43,7 @@
         animation__mouseleave="
           property: components.material.material.color; 
           type: color; 
-          to: red; 
+          to: pink; 
           startEvents: mouseleave; 
           dur: 500;">  
       </a-box>
